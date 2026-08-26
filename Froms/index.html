@@ -6,53 +6,60 @@
     <title>Document</title>
   </head>
   <body>
-      <form action="/home">
-        <fieldset>
-            <legend>Personal info</legend>
-            <label for="name">Name</label>
-            <input  id="name" type="text" placeholder="Name"><br> <br>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email"><br><br>
-            <label for="age">Age</label>
-            <input  id="age" type="numer" placeholder="age"><br> <br> 
-            <label for="mobile">Mobile</label>
-            <input  id="mobile" type="number" placeholder="Mobile">
-          
+    <form action="/home">
+      <fieldset>
+        <legend>Personal info</legend>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Name" /><br />
+        <br />
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" /><br /><br />
+        <label for="age">Age</label>
+        <input id="age" type="numer" placeholder="age" /><br />
+        <br />
+        <label for="mobile">Mobile</label>
+        <input id="mobile" type="number" placeholder="Mobile" />
+      </fieldset>
+      <br />
 
+      <fieldset>
+        <legend>Address</legend>
+        <input type="text" placeholder="street name" /> <br />
+        <br />
+        <input type="text" placeholder="Locality or city" /> <br />
+        <br />
+        <input type="text" placeholder="state" /> <br />
+        <br />
+      </fieldset>
+      <br />
 
-        </fieldset>
-        <br>
+      <span>Select language: </span>
+      <select name="ln" id="ln">
+        <option value="H">Hindi</option>
+        <option value="F">French</option>
+        <option value="E">English</option>
+      </select>
+      <br />
+      <br />
 
-        <fieldset>
-            <legend>Address</legend>
-            <input type="text" placeholder="street name"> <br> <br>
-            <input type="text" placeholder="Locality or city"> <br> <br>
-            <input type="text" placeholder="state"> <br> <br>
+      <span>Accept Terms and Conditions</span><input type="checkbox" /> <br />
+      <br /><textarea rows="6" name="" id="" placeholder="Reviews"></textarea>
+      <br />
+      <br />
 
+      <input type="checkbox" id="html" name="language" value="HTML" />
+      <label for="html">HTML</label> <br />
 
-        </fieldset> <br>
+      <input type="checkbox" id="css" name="language" value="CSS" />
+      <label for="css">CSS</label> <br />
 
-        <span>Select language: </span>
-        <select name="ln" id="ln">
-            <option value="H">Hindi</option>
-            <option value="F">French</option>
-            <option value="E">English</option>
-        </select> <br> <br>
+      <input type="checkbox" id="js" name="language" value="JS" />
+      <label for="js">JS</label> <br />
 
-        <span 
-        >Accept Terms and Conditions</span><input type="checkbox">
-           <br> <br><textarea  rows="6"  name="" id="" placeholder="Reviews"></textarea> <br> <br>
+      <label for="resume">Upload your resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
 
-           <input type="checkbox" id="html" name="language" value="HTML">
-           <label for="html">HTML</label> <br>
-
-           <input type="checkbox" id="css" name="language" value="CSS">
-           <label for="css">CSS</label> <br>
-
-           <input type="checkbox" id="js" name="language" value="JS">
-           <label for="js">JS</label> <br>
-           
-        <br><br><button>Create</button>
-      </form>
+      <br /><br /><button>Create</button>
+    </form>
   </body>
 </html>
